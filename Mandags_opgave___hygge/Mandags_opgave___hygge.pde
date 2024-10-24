@@ -1,6 +1,4 @@
 int lightOn;
-
-
 int x;
 int y;
 
@@ -33,10 +31,12 @@ void draw(){
    }
    if(keyPressed){
      if(keyCode == DOWN){
+       background(0);
        ellipse(x-300,y,200,200);
        y = y + 1;
      } else {
        if(keyCode == UP){
+         background(0);
          ellipse(x-300,y,200,200);
          y = y - 1;
        }
@@ -45,10 +45,12 @@ void draw(){
    
       if(keyPressed){
      if(keyCode == RIGHT){
+       background(0);
        ellipse(x-300,y,200,200);
        x = x + 1;
      } else {
        if(keyCode == LEFT){
+         background(0);
          ellipse(x-300,y,200,200);
          x = x - 1;
        }

@@ -1,5 +1,5 @@
 package org.example;
-
+// kom til og pull origin i git så skal lige sende den tilbage
 
 import org.abstractica.javacsg.Geometry3D;
 import org.abstractica.javacsg.JavaCSG;

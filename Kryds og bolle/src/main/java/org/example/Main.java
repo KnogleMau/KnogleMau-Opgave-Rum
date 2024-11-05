@@ -10,7 +10,15 @@ public class Main {
     public static void main(String[] args) {
        // System.out.println("hello world");
         JavaCSG csg = JavaCSGFactory.createDefault();
+
+        Kryds kryds1 = new Kryds(8,1,1);
+
+      kryds1.krydsView();
+
+
+
 // Kryds og Bolle pladen
+       /*
        Geometry3D line1 = csg.box3D(30,1,3,false);
        Geometry3D line2 = csg.box3D(30,1,3,false);
        Geometry3D line3 = csg.box3D(30,1,3,false);
@@ -37,14 +45,6 @@ public class Main {
 
        Geometry3D kryds1 = csg.box3D(8,1,1,false);
        Geometry3D kryds2 = csg.box3D(8,1,1,false);
-       Geometry3D kryds3 = csg.box3D(8,1,1,false);
-       Geometry3D kryds4 = csg.box3D(8,1,1,false);
-       Geometry3D kryds5 = csg.box3D(8,1,1,false);
-       Geometry3D kryds6 = csg.box3D(8,1,1,false);
-       Geometry3D kryds7 = csg.box3D(8,1,1,false);
-       Geometry3D kryds8 = csg.box3D(8,1,1,false);
-       Geometry3D kryds9 = csg.box3D(8,1,1,false);
-       Geometry3D kryds10 = csg.box3D(8,1,1,false);
 
        bolle1 = csg.translate3D(25,-25,0).transform(bolle1);
        bolle2 = csg.translate3D(25,-10,0).transform(bolle2);
@@ -56,23 +56,7 @@ public class Main {
        kryds2 = csg.translate3D(20,25,0).transform(kryds2);
        kryds2 = csg.rotate3D(csg.degrees(0),csg.degrees(0),csg.degrees(90)).transform(kryds2);
 
-       kryds3 = csg.translate3D(-25,5,0).transform(kryds3);
-       kryds4 = csg.translate3D(5,25,0).transform(kryds4);
-       kryds4 = csg.rotate3D(csg.degrees(0),csg.degrees(0),csg.degrees(90)).transform(kryds4);
 
-       kryds5 = csg.translate3D(-25,-25,0).transform(kryds5);
-       kryds6 = csg.translate3D(-25,25,0).transform(kryds6);
-       kryds6 = csg.rotate3D(csg.degrees(0), csg.degrees(0), csg.degrees(90)).transform(kryds6);
-
-       kryds7 = csg.translate3D(-25,-10,0).transform(kryds7);
-       kryds8 = csg.translate3D(-10,25,0).transform(kryds8);
-       kryds8 = csg.rotate3D(csg.degrees(0),csg.degrees(0),csg.degrees(90)).transform(kryds8);
-
-       kryds9 = csg.translate3D(0,-25,0).transform(kryds9);
-       kryds10 = csg.translate3D(-25,0,0).transform(kryds10);
-       kryds10 = csg.rotate3D(csg.degrees(0),csg.degrees(0),csg.degrees(90)).transform(kryds10);
-
-       Geometry3D bolle = csg.union3D(bolle1, bolle2, bolle3, bolle4,bolle5);
        Geometry3D kryds = csg.union3D(kryds1, kryds2, kryds3, kryds4, kryds5, kryds6, kryds7, kryds8, kryds9, kryds10);
 
 
@@ -80,8 +64,9 @@ public class Main {
 
 
 
-       csg.view(vert);
+       csg.view();
 
+      */
 
     }
 }
